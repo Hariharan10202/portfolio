@@ -40,6 +40,7 @@ const Contact = () => {
       .then(
         (result) => {
           toast.success("Email sent successfully, Get back to shortly");
+          formRef.current.reset();
         },
         (error) => {
           toast.error("Something went wrong");
