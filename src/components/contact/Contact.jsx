@@ -31,7 +31,7 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_unlykbi",
+        "service_2xkihvw",
         "template_9vlmdz2",
         formRef.current,
         "bMj829qKGgQKy6XF0"
@@ -41,6 +41,7 @@ const Contact = () => {
           setSuccess(true);
         },
         (error) => {
+          console.log(error);
           setError(true);
         }
       );
