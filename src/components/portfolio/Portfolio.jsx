@@ -26,7 +26,7 @@ const Single = ({ item, type }) => {
             }`}
             style={{ y }}
           >
-            <h2>{item.title}</h2>
+            <h2 style={{ padding: "15px" }}>{item.title}</h2>
             <p
               dangerouslySetInnerHTML={{
                 __html: item?.desc,

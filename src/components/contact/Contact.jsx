@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import "./contact.scss";
 import { motion, useInView } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 
 const variants = {
   initial: {
@@ -38,11 +39,10 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          setSuccess(true);
+          toast.success("Email sent successfully, Get back to shortly");
         },
         (error) => {
-          console.log(error);
-          setError(true);
+          toast.error("Something went wrong");
         }
       );
   };

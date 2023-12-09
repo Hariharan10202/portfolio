@@ -1,3 +1,4 @@
+import ToasterProvider from "./Provider/ToastProvider";
 import Test from "./Test";
 import "./app.scss";
 import Skills from "./components/Skills/Skills";
@@ -15,6 +16,7 @@ import Skyparallex from "./components/sky-paralllex/Skyparallex";
 const App = () => {
   return (
     <div>
+      <ToasterProvider />
       <Cursor />
       <section id="Homepage">
         <Navbar />
