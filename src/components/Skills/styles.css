@@ -1,0 +1,111 @@
+.swiperContainer {
+  height: 100vh;
+  width: 100%;
+  padding: 50px;
+}
+
+.swiperImgContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 200px;
+}
+
+.swiperImgContainer img {
+  width: 100%;
+  object-fit: cover;
+}
+.swiperImgContainer p {
+  font-weight: 600;
+}
+
+.swiper {
+  width: 80%;
+  margin: auto;
+  border-radius: 50px;
+}
+
+.mySwiper {
+  padding-top: 50px;
+}
+
+.massSwiper {
+  height: 500px;
+  width: 60%;
+}
+
+.massSwiper .swiper-slide {
+  text-align: center;
+  background: transparent;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.swiperContentContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: white;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+}
+
+.swiperContentContainer > div {
+  text-align: left;
+}
+
+.swiperContentContainer > h1 {
+  font-size: 80px;
+  color: rgba(205, 207, 208, 0.457);
+}
+
+.swiperContentContainer > div > ul {
+  list-style: inside;
+}
+
+.swiperContentContainer > div > ul > li {
+  font-size: 20px;
+}
+
+.massSwiper .swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.58);
+}
+
+.massSwiper .swiper-pagination-bullet-active {
+  background-color: rgb(255, 255, 255);
+}
+
+@media (max-width: 1248px) {
+  .swiperContentContainer > h1 {
+    font-size: 80px;
+  }
+  .swiperContentContainer > div > ul > li {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .swiperContentContainer > h1 {
+    font-size: 60px;
+  }
+  .swiperContentContainer > div > ul > li {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .swiperContentContainer > h1 {
+    font-size: 40px;
+  }
+  .swiperContentContainer > div > ul > li {
+    font-size: 16px;
+  }
+}
