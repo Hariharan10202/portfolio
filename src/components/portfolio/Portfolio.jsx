@@ -32,18 +32,20 @@ const Single = ({ item, type }) => {
                 __html: item?.desc,
               }}
             />
-            <div className="linkContainer">
-              <button className="secondary">
-                <a href={item.git} target="_blank">
-                  Github <FaGithub />
-                </a>
-              </button>
-              <button>
-                <a href={item.demo} target="_blank">
-                  View <FaExternalLinkAlt />
-                </a>
-              </button>
-            </div>
+            {type && (
+              <div className="linkContainer">
+                <button className="secondary">
+                  <a href={item.git} target="_blank">
+                    Github <FaGithub />
+                  </a>
+                </button>
+                <button>
+                  <a href={item.demo} target="_blank">
+                    View <FaExternalLinkAlt />
+                  </a>
+                </button>
+              </div>
+            )}
           </motion.div>
         </div>
       </div>

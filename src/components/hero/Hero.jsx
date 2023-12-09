@@ -201,7 +201,9 @@ const Hero = () => {
             <motion.button type="button" style={{ cursor: "pointer" }}>
               <a href="#Portfolio"> See the Latest Works</a>
             </motion.button>
-            <motion.button variants={textVariants}>Contact Me</motion.button>
+            <motion.button variants={textVariants}>
+              <a href="#Contact">Contact Me</a>
+            </motion.button>
           </motion.div>
           <motion.img
             variants={textVariants}
