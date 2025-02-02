@@ -2,6 +2,10 @@
   height: 100vh;
   width: 100%;
   padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
 }
 
 .swiperImgContainer {
@@ -107,5 +111,11 @@
   }
   .swiperContentContainer > div > ul > li {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .massSwiper {
+    width: 100%;
   }
 }

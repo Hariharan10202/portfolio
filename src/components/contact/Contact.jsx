@@ -43,6 +43,8 @@ const Contact = () => {
           formRef.current.reset();
         },
         (error) => {
+          console.log(error);
+
           toast.error("Something went wrong");
         }
       );
